@@ -1,0 +1,266 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    color: #2E0219;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    background-color: #DD403A;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-family: "Bungee Shade";
+}
+
+h1 {
+    font-size: 6em;
+    margin: 0;
+    color: #2E0219;
+    margin-bottom: 20px;
+}
+
+h2,
+h3 {
+    margin: 0;
+    font-family: "Saira Stencil One";
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Bungee Shade";
+    /* min-height: 30rem; */
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.button {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+button {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-family: "Saira Stencil One";
+
+}
+footer a {
+    color: #2E0219;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 75%;
+    flex-grow: 3;
+    background-color: #3E363F;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.cards img {
+    width: 19%;
+    height: 100%;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1%;
+
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    background-color: #3E363F;
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 2%;
+    color: #F7F7FF;
+}
+
+.timer-side {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.timer-side>*,
+.score>* {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3E363F;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    color: #F7F7FF;
+}
+
+.flip {
+    border: 5px solid seagreen;
+}
+
+.wrong {
+    border: 5px solid red;
+}
+
+label {
+    margin: 0 auto;
+    width: 20%;
+    display: block;
+    justify-content: center;
+    color: #F7F7FF;
+    font-size: 100%;
+    font-family: "Saira Stencil One";
+}
+
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.resetButton {
+    box-shadow: 0px 1px 0px 0px #1c1b18;
+    background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6', GradientType=0);
+    background-color: #eae0c2;
+    border-radius: 15px;
+    border: 2px solid #333029;
+    display: inline-block;
+    cursor: pointer;
+    color: #505739;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+.resetButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+    background: -moz-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+    background: -webkit-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+    background: -o-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+    background: -ms-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+    background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2', GradientType=0);
+    background-color: #ccc2a6;
+}
+
+.resetButton:active {
+    position: relative;
+    top: 1px;
+}
+
+@media (min-width: 1080px) {
+    .top {
+
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .bottom {
+        width: 67%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 3em;
+        margin-top: 20px;
+    }
+
+    .flip {
+        border: 2px solid seagreen;
+    }
+
+    .wrong {
+        border: 2px solid red;
+    }
+
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2,
+    h3 {
+        font-size: 1rem;
+    }
+
+    main {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .bottom {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .resetButton {
+        border: 1px;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .side {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+        order: 2;
+    }
+}
